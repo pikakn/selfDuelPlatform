@@ -2,6 +2,7 @@
 <html>
     <head>
         <link rel="stylesheet" href="style/duelfield.css">
+        <link rel="stylesheet" href="style/readmelayout.css">
     </head>
     <body>
         <main>
@@ -77,6 +78,53 @@
                 <div class="cardZone" id="cardList">   
                 </div>
             </div>
+            <h1>一人回し用インターフェイス</h1>
+            <div class="sentence">
+                <div class="paragraph-start">
+                    <img src="readme\振り分けの例.png" alt="" class="subImages">
+                    <h2>概要</h2>
+                    <p>現物のカードの一人回しのように、ルールを無視してカードを並べられるUIです。</p><br>
+                    <p>カードを画面にアップロードし、主にドラッグアンドドロップで移動させます。</p>                    
+                    <h2 class=>使い方</h2>
+                    <p>ざっくりと、<br>
+                        カードのアップロード→カードの振り分け<br>
+                    の流れで利用します。</p>
+                </div>
+                <div class="paragraph-start">
+                    <h3 class="paragraph-start">1,カードのアップロード</h3>
+                    <img src="readme\はじめに.png" alt="" class="subImages">
+                    <p>お使いのファイル管理ソフト(windowsならPC)で、利用するカードを必要な枚数だけimagesフォルダに保存してください。<br>
+                        カード画像はきれいに切り抜かれている必要はありませんが、縦横比が遊戯王カードに近いと使いやすいです。<br>
+                        フォルダの相対的な位置が重要なので、selfduelplatformフォルダの「imagesの中身」以外は動かさないでください。
+                    </p><br>
+                    <p>右上の「ファイルの選択」ボタンを押します。</p>
+                    <p>先ほど編集したimagesフォルダの中にある、必要なカードを選択し、「開く」を押してください。<br>
+                    複数選択には、「ctrlを押しながらクリック」、「shift+クリック」が便利です。</p><br>
+                    <p>選択したカードがフィールド外のゾーン（リザーブと呼ぶことにします）に重なってアップロードされます。</p>   
+                </div>
+                <div class="paragraph-start">
+                    <h3>2,カードの振り分け</h3>
+                    <img src="readme\リストの見え方.png" alt="" class="subImages">
+                    <p>このカードたちは、カードとリザーブの余白をクリックするとリスト表示されます。</p>
+                    <p>リスト上部の「リストを閉じる」ボタンでリストを閉じます。</p>
+                    <p>自分のお好きな位置に振り分けてください。</p><br>
+                    <p>リザーブは、使いそうなカードを保管しておくスペースとしても使えます。</p>
+                    <p>なお、「ファイルの選択」ボタンでカードを追加した際にリザーブにもともとカードがあった場合、
+                        それらはすべて画面から消えて上書きされます。</p>
+                </div>
+                <h3>3,各種操作</h4>
+                <div class="paragraph-start">
+                    <h4>フィールドについて</h4>                    
+                    <p>フィールドは遊戯王と同様にカードを置くことができます。ドラッグアンドドロップで移動させます。また、カードを重ねることもできます。</p><br>
+                    <p>デッキ、墓地、除外状態、exデッキに関しては、リザーブと同じように対応する余白をクリックすることで、カードを右にリスト表示することができます。</p>
+                    <p>モンスターゾーンのカードをクリックすると、守備表示になります。もう一度クリックすると攻撃表示に戻ります。</p>
+                    <h4>データの消去</h4>
+                    <p>画面を初期状態にリセットしたい場合は、本ソフトをリロードしてください。</p>
+                    <p>その際内部データが消えることはありません。</p>
+                </div>
+            </div>
+
+
         </main>
         <script src="js/DDcardmove.js"></script>
         <script src="js/listdisplay.js"></script>

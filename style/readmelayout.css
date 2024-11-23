@@ -1,0 +1,26 @@
+h1 {
+    text-align: center;
+}
+p {
+    display: block;
+    width: 60%;
+}
+
+.sentence {
+    display: block;
+    padding: 30px;
+}
+
+.subImages{
+    position: absolute;
+    display: block;
+    right: 0;
+    width: 39%;
+    height: auto;
+    margin-left: 1%;
+    border: 3px solid azure;
+}
+
+.paragraph-start{
+    position: relative;
+}
