@@ -16,7 +16,7 @@ for (i=0; i<cardsListed.length; i++) {
     const CL = cardsListed[i];
     CL.addEventListener("click",(event)=>{
         if (List.style.display != "inline-block" && event.target.classList.contains("card")) {
-            alert("余白をクリック")
+            alert("余白をクリックしてリストを表示")
         }
         if (List.style.display != "inline-block" && event.target.classList.contains("cardZone")) {
             List.innerHTML = null;
@@ -42,7 +42,6 @@ ListBtn.addEventListener("click", ()=>{
         const CL = cardsListed[i];
         if (CL.classList.value == listedClass) {
             const CLchil = CL.children;
-            CLchil[0].innerHTML = null;
             allMoveDatas(List.children,CLchil[0]);
             CLchil[0].style.backgroundColor = "whitesmoke";
         };

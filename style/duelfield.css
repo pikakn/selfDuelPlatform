@@ -183,3 +183,7 @@ main{
     margin-right: -20px;
 
 }
+
+#cardinput{
+    position: inline-block;
+}
