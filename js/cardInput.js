@@ -2,7 +2,7 @@ let fileInput = null;
 const cardInput = document.getElementById('cardInput');
 cardInput.addEventListener('change', (event)=> {
     fileInput = event.target;
-    let addElement;
+    let addElement = "";
     for (i=0; i<fileInput.files.length; i++) {
         let fileName = fileInput.files[i].name;
         addElement += "<img src=\"images/" + fileName +"\" class=\"card\">" + "\n"; 
