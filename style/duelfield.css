@@ -161,4 +161,25 @@ main{
     width: auto;
 }
 
+.hand {
+    position: absolute;
+    top: 400px;
+    left: 220px;
+}
 
+.hand .cardZone{
+    width: 450px;
+    display: flex;
+    background-color: whitesmoke;
+}
+
+.hand .cardZone .card{
+    margin-right: 5px;
+    display: inline;
+    position: static;
+    top: none;
+    transform: translate(0,0);
+    left:none;
+    margin-right: -20px;
+
+}
