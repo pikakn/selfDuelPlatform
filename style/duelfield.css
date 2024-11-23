@@ -145,7 +145,7 @@ main{
     display: block;
     position: static;
     top: 30px;
-    transform: translate(0,0);
+    transform: translate(0,0) rotate(0);
     left:5%;
     width: 90%;
     height: auto;

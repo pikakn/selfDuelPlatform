@@ -15,7 +15,10 @@ const allMoveDatas =(source,destination)=> {
 for (i=0; i<cardsListed.length; i++) {
     const CL = cardsListed[i];
     CL.addEventListener("click",(event)=>{
-        if (List.style.display != "inline-block") {
+        if (List.style.display != "inline-block" && event.target.classList.contains("card")) {
+            alert("余白をクリック")
+        }
+        if (List.style.display != "inline-block" && event.target.classList.contains("cardZone")) {
             List.innerHTML = null;
             List.style.display = "inline-block";
             ListBtn.style.display = "inline-block";
