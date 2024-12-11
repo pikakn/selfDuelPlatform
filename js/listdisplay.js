@@ -12,6 +12,20 @@ const allMoveDatas =(source,destination)=> {
     };  
 };
 
+const datas_to_zone = ()=>{
+    List.style.display = "none";
+    ListBtn.style.display = "none";
+    for (i=0; i<cardsListed.length; i++) {
+        const CL = cardsListed[i];
+        if (CL.classList.value == listedClass) {
+            const CLchil = CL.children;
+            allMoveDatas(List.children,CLchil[0]);
+            CLchil[0].style.backgroundColor = "whitesmoke";
+            listedClass=null
+        };
+    };
+}  
+
 for (i=0; i<cardsListed.length; i++) {
     const CL = cardsListed[i];
     CL.addEventListener("click",(event)=>{
@@ -35,15 +49,12 @@ for (i=0; i<cardsListed.length; i++) {
 }
 
 
-ListBtn.addEventListener("click", ()=>{
-    List.style.display = "none";
-    ListBtn.style.display = "none";
-    for (i=0; i<cardsListed.length; i++) {
-        const CL = cardsListed[i];
-        if (CL.classList.value == listedClass) {
-            const CLchil = CL.children;
-            allMoveDatas(List.children,CLchil[0]);
-            CLchil[0].style.backgroundColor = "whitesmoke";
-        };
-    };
+ListBtn.addEventListener("click",()=>{
+    datas_to_zone();
+});
+
+document.addEventListener("keydown", (event)=>{
+    if (event.key == "q" && List.style.display == "inline-block") {
+        datas_to_zone()
+    }
 });
