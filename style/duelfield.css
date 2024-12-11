@@ -190,10 +190,28 @@ main{
 
 #cardView{
     position: absolute;
+    overflow: hidden;
     display: none;
-    top: 30px;
+    top: 40px;
     left: 30px;
     width: 480px;
     height: 480px;
     background-color: aliceblue;
+}
+
+#toggleView{
+    position: absolute;
+    display: none;
+    top: 10px;
+    left: 30px;
+    border: 2px solid blue;
+}
+
+.focus{  
+    top: initial;
+    bottom: 0;
+    left:50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: auto;   
 }
