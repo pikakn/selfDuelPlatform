@@ -187,3 +187,13 @@ main{
 #cardinput{
     position: inline-block;
 }
+
+#cardView{
+    position: absolute;
+    display: none;
+    top: 30px;
+    left: 30px;
+    width: 480px;
+    height: 480px;
+    background-color: aliceblue;
+}
